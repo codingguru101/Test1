@@ -1,0 +1,31 @@
+Submit a code sample that outputs “Sam” 3 times, each on a new line. This is what we’re going for:
+
+Sam
+Sam
+Sam
+
+answer=
+3.times do
+puts "sam"
+end
+
+
+A Ruby program usually runs in O(1). If I tell you the computer it’s running on is swapping, does that matter? Is it, or is it not, still running in O(1)?
+answer =
+I think ruby is still running in 0(1) because thats is something that is constant swapping only reduces the performance of the computer because it switches files around that it thinks that you may not need.
+
+Assume:
+- conducting a regular search for an item in an Array takes 10 seconds
+- conducting a binary search for an item in an Array takes 1 second
+- sorting an Array takes 100 seconds
+
+Therefore:
+- Pre-sorting an Array and doing a binary search takes 100+1=101 seconds.
+- Pre-sorting an Array and doing 2 binary searches takes 100+1+1=102 seconds.
+- 3 binary searches? 100+1+1+1=103 seconds.
+- 3 regular searches? 10+10+10=30 seconds.
+
+Keep going with this. How many searches in a row do you have to do before it becomes faster to pre-sort + binary search than search?
+
+
+answer = 12 searches
